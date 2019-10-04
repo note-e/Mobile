@@ -37,7 +37,9 @@ class _LoginPageState extends State<LoginPage> {
             child: Text(
               "Login",
               textAlign: TextAlign.center,
-            )));
+            )
+          )
+        );
 
     final signUpBtn = Material(
         color: Colors.amber,
@@ -47,59 +49,65 @@ class _LoginPageState extends State<LoginPage> {
             child: Text(
               "Sign Up",
               textAlign: TextAlign.center,
-            )));
+            )
+        )
+    );
 
     return Scaffold(
       body: Center(
-        child: new ListView(
-          children: <Widget>[
-            Container(
-              color: Colors.white,
-              child: Column(
-                children: <Widget>[
-                  SizedBox(
-                    height: 300.0,
-                    child: Image.asset(
-                      "assets/note.jpg",
-                      fit: BoxFit.contain,
+        child: Container(
+            color: Colors.white,
+            child: new ListView(
+              children: <Widget>[
+                Column(
+                  children: <Widget>[
+                    SizedBox(
+                      height: 300.0,
+                      child: Image.asset(
+                        "assets/note.jpg",
+                        fit: BoxFit.contain,
+                      ),
                     ),
-                  ),
-                  SizedBox(
-                    height: 90.0,
-                    width: 300.0,
-                    child: username,
-                  ),
-                  SizedBox(
-                    height: 90.0,
-                    width: 300.0,
-                    child: password,
-                  ),
-                  SizedBox(
-                    height: 60.0,
-                    width: 150.0,
-                    child: loginBtn,
-                  ),
-                  SizedBox(
+                    SizedBox(
+                      height: 90.0,
+                      width: 300.0,
+                      child: username,
+                    ),
+                    SizedBox(
+                      height: 90.0,
+                      width: 300.0,
+                      child: password,
+                    ),
+                    SizedBox(
                       height: 60.0,
-                      width: 500.0,
-                      child: Center(
-                          child: Text(
-                        '____________OR___________',
-                        style: TextStyle(
-                          color: Colors.amber,
-                          fontSize: 20.0,
-                        ),
-                      ))),
-                  SizedBox(
-                    height: 60.0,
-                    width: 150.0,
-                    child: signUpBtn,
-                  ),
-                ],
-              ),
-            )
-          ],
-        ),
+                      width: 150.0,
+                      child: loginBtn,
+                    ),
+                    SizedBox(
+                        height: 60.0,
+                        width: 500.0,
+                        child: Center(
+                            child: Text(
+                              '____________OR___________',
+                              style: TextStyle(
+                                color: Colors.amber,
+                                fontSize: 20.0,
+                              ),
+                            ))),
+                    SizedBox(
+                      height: 60.0,
+                      width: 150.0,
+                      child: signUpBtn,
+                    ),
+                  ],
+                ),
+
+              ],
+            ),
+        )
+
+
+
       ),
     );
   }
