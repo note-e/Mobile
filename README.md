@@ -1,16 +1,19 @@
-# note_ev02
+<h1 align="center"> Note-E 📝 </h1>
 
-A new Flutter application.
+<p align="center">
 
-## Getting Started
+  <a href="https://github.com/note-e/Mobile/issues">
+    <img src="https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat">
+  </a>
 
-This project is a starting point for a Flutter application.
+  <a href="http://hits.dwyl.io/note-e/Mobile">
+    <img src="http://hits.dwyl.io/note-e/Mobile.svg">
+  </a>
 
-A few resources to get you started if this is your first Flutter project:
+</p>
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+## development
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+```shell
+git clone https://github.com/note-e/Mobile
+```
