@@ -9,7 +9,7 @@ class _NotesListState extends State<NotesList> {
   @override
   Widget build(BuildContext context) {
     return new Scaffold(
-      
+
     );
   }
 }
