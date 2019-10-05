@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:email_validator/email_validator.dart';
+import '../Login.dart';
+
 
 // User's Data Class
 class _LoginData{
@@ -23,6 +26,8 @@ class _SignUpState extends State<SignUp> {
   final _fullNameController = new TextEditingController();
   final _emailController = new TextEditingController();
   final _passwordController = new TextEditingController();
+
+
 
 
   // Text Widgets
@@ -143,9 +148,18 @@ class _SignUpState extends State<SignUp> {
                                   borderRadius: BorderRadius.circular(25.0),
                                 ),
                               ),
+                              /**
+                               * validator: (val) => !EmailValidator.validate(val, true)
+                                  ? 'Not a valid email.'
+                                  : null,
+                                  onSaved: (val) => _email = val,
+                               **/
                               validator: (value) {
                                 if (value.isEmpty) {
                                   return "Please Enter your E-mail Address!";
+                                }
+                                else if(!EmailValidator.validate(value)) {
+                                  return "Not a valid email!";
                                 }else{
                                   Data.email = value;
                                   return null;
@@ -232,7 +246,14 @@ class _SignUpState extends State<SignUp> {
                                          decoration: TextDecoration.underline,
                                        ),
                                     ),
-                                    onTap: ()=> debugPrint("Pressed!"),
+                                    onTap: (){
+                                        var route = new MaterialPageRoute(
+                                          builder: (BuildContext context){
+                                          return new LoginPage();
+                                          });
+
+                                          Navigator.of(context).push(route);
+                                    },
                                   ),
                                 ],
                               ),
