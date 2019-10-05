@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import './ui/signup.dart';
 
 class LoginPage extends StatefulWidget {
   @override
@@ -45,7 +46,14 @@ class _LoginPageState extends State<LoginPage> {
         color: Colors.amber,
         borderRadius: BorderRadius.circular(30.0),
         child: MaterialButton(
-            onPressed: () {},
+            onPressed: () {
+              var route = new MaterialPageRoute(
+                  builder: (BuildContext context){
+                    return new SignUp();
+                  });
+
+              Navigator.of(context).push(route);
+            },
             child: Text(
               "Sign Up",
               textAlign: TextAlign.center,
