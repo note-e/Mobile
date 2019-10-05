@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:email_validator/email_validator.dart';
-import '../Login.dart';
+import 'Login.dart';
 
 
 // User's Data Class
@@ -233,7 +233,7 @@ class _SignUpState extends State<SignUp> {
                           SizedBox(
                             height: 90,
                             width: 300,
-                            child: _userPassword;
+                            child: _userPassword,
                           ),
 
                           // blank white space

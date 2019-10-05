@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:note_ev02/Login.dart';
+import 'package:note_ev02/ui/Login.dart';
 import 'package:note_ev02/ui/signup.dart';
 
 void main() => runApp(MyApp());
