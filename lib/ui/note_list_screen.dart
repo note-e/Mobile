@@ -1,10 +1,8 @@
 import 'dart:convert';
-import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import './note.dart';
 import 'dart:async';
-import 'package:flutter/foundation.dart';
 import 'notes_list.dart';
 
 Future<List<Note>> fetchNotes(http.Client client) async {
