@@ -14,6 +14,8 @@
 
 ## development
 
+[![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/325cf820fe9ab1940b09#?env%5BNote-E%5D=W3sia2V5IjoiYmFzZV91cmwiLCJ2YWx1ZSI6Imh0dHBzOi8vYXBpLW5vdGUtZS5oZXJva3VhcHAuY29tLyIsImVuYWJsZWQiOnRydWV9XQ==)
+
 ```shell
 git clone https://github.com/note-e/Mobile
 ```
